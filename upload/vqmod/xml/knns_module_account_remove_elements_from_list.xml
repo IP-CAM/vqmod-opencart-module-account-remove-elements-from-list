@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<modification
+		xmlns="https://github.com/vqmod/vqmod"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="https://github.com/vqmod/vqmod https://raw.githubusercontent.com/vqmod/vqmod/master/vqmod.xsd"
+		>
+			<id><![CDATA[[VQMOD] Module > Account - Remove Elements From List]]></id>
+			<version>0.1</version>
+			<vqmver>2.6.3</vqmver>
+			<author>kanenas.net (aka Nikolas Branis) - nbran@kanenas.net</author>
+			<file path="catalog/view/theme/*/template/module/" name="account.tpl" error="log">
+				<operation error="skip">
+					<search position="replace"><![CDATA[<a href="<?php echo $download; ?>" class="list-group-item"><?php echo $text_download; ?></a>]]></search>
+					<add><![CDATA[]]></add>
+				</operation>
+				<operation error="skip">
+					<search position="replace"><![CDATA[<a href="<?php echo $reward; ?>" class="list-group-item"><?php echo $text_reward; ?></a>]]></search>
+					<add><![CDATA[]]></add>
+				</operation>
+				<operation error="skip">
+					<search position="replace"><![CDATA[<a href="<?php echo $transaction; ?>" class="list-group-item"><?php echo $text_transaction; ?></a>]]></search>
+					<add><![CDATA[]]></add>
+				</operation>
+				<operation error="skip">
+					<search position="replace"><![CDATA[<a href="<?php echo $recurring; ?>" class="list-group-item"><?php echo $text_recurring; ?></a>]]></search>
+					<add><![CDATA[]]></add>
+				</operation>
+			</file>
+	</modification>
